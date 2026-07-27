@@ -2,6 +2,8 @@ import random
 import streamlit as st
 if 'ran' not in st.session_state or st.session_state.ran < 1:
   st.session_state.ran=20
+if 'level' not in st.session_state:
+  st.session_state.level=1
 if 'num' not in st.session_state:
   st.session_state.num=0
 if 'sc' not in st.session_state:
@@ -43,6 +45,7 @@ if st.button("السؤال التالي "):
 if st.session_state.num > 0 and st.session_state.num % 10 == 0:
   st.success("لقد اجتزت هذا الليفل ")
   if st.button("الليفل التالي "):
+     st.session_state.level+=1
      st.session_state.ran+=20
      del st.session_state.num1
      del st.session_state.num2
