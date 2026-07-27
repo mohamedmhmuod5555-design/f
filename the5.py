@@ -37,6 +37,6 @@ if st.button("السؤال التالي "):
     del st.session_state.num2
     del st.session_state.sign
     st.rerun()
-if num==10:
+if st.session_state.num==10:
   st.succes("لقد اجتزت هذا الليفل ")
 st.write("your points are " ,st.session_state.num,"from",st.session_state.count,"Questions")
