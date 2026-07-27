@@ -5,7 +5,7 @@ if 'button_text' not in st.session_state:
 if 'num' not in st.session_state:
   st.session_state.num
 if 'sc' not in st.session_state:
-  st.session_state.sc=0
+  st.session_state.sc
 if 'count' not in st.session_state:
   st.session_state.count=0
 if 'num1' not in st.session_state:
