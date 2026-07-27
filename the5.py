@@ -40,7 +40,7 @@ if st.button("السؤال التالي "):
     del st.session_state.num2
     del st.session_state.sign
     st.rerun()
-if st.session_state.num==1:
+if st.session_state.num==10||20||30||40||50||60||70:
   st.success("لقد اجتزت هذا الليفل ")
   if st.button("الليفل التالي "):
      st.session_state.ran+=20
@@ -49,6 +49,4 @@ if st.session_state.num==1:
      del st.session_state.sign
 else:
    st.session_state.ran=20
- if st.button("الليفل التالي ")==1:
-   st.rerun()
 st.write("your points are " ,st.session_state.num,"from",st.session_state.count,"Questions")
