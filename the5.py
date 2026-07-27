@@ -43,7 +43,7 @@ if st.session_state.num==1:
   st.success("لقد اجتزت هذا الليفل ")
   if st.button("الليفل التالي "):
      st.session_state.ran+=20
-    if 'num1' in st.session_state:  del st.session_state.num1
-    if 'num2' in st.session_state:  del st.session_state.num2
-    if 'sign' in st.session_state:  del st.session_state.sign
+    if 'num1' in st.session_state:   del st.session_state.num1
+    if 'num2' in st.session_state:   del st.session_state.num2
+    if 'sign' in st.session_state:   del st.session_state.sign
 st.write("your points are " ,st.session_state.num,"from",st.session_state.count,"Questions")
