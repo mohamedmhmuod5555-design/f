@@ -39,7 +39,7 @@ if st.button("السؤال التالي "):
     del st.session_state.num2
     del st.session_state.sign
     st.rerun()
-if st.session_state.num==10:
+if st.session_state.num==1:
   st.success("لقد اجتزت هذا الليفل ")
   if st.button("الليفل التالي "):
     st.session_state.num1=random.randint(1,40)
