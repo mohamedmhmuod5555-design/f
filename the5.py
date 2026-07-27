@@ -42,7 +42,11 @@ if st.button("السؤال التالي "):
 if st.session_state.num==1:
   st.success("لقد اجتزت هذا الليفل ")
   if st.button("الليفل التالي "):
-    st.session_state.num1=random.randint(1,40)
-    st.session_state.num2=random.randint(1,40)
-    st.session_state.sign=random.choice(['+','-','*','/']) 
+    if 'num1' in st.session_state: del st.session_state.num1
+    if 'num2' in st.session_state: del st.session_state.num2
+    if 'sign' in st.session_state: del st.session_state.sign
+    st.rerun()
+     st.session_state.num1=random.randint(1,40)
+     st.session_state.num2=random.randint(1,40)
+     st.session_state.sign=random.choice(['+','-','*','/'])
 st.write("your points are " ,st.session_state.num,"from",st.session_state.count,"Questions")
