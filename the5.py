@@ -3,7 +3,7 @@ import streamlit as st
 if 'button_text' not in st.session_state:
   st.session_state.button_text="السؤال التالي "
 if 'num' not in st.session_state:
-  st.session_state.num=0
+  st.session_state.num=10
 if 'sc' not in st.session_state:
   st.session_state.sc=0
 if 'count' not in st.session_state:
