@@ -31,7 +31,7 @@ if st.button("تأكيد التخمين "):
 else:
     st.error(f"اجابتك خاطئة! الإجابة الصحيحة كانت : {sc}")
     st.session_state.num = 0
-if t.button("السؤال التالي "):
+if st.button("السؤال التالي "):
     del st.session_state.num1
     del st.session_state.num2
     del st.session_state.sign
