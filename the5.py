@@ -34,6 +34,11 @@ if st.button("تأكيد التخمين "):
   else:
     st.error(f"اجابتك خاطئة! الإجابة الصحيحة كانت : {sc}")
     st.session_state.num = 0
+if st.button("السؤال التالي "):
+    del st.session_state.num1
+    del st.session_state.num2
+    del st.session_state.sign
+    st.rerun()
 if st.session_state.num==10:
   st.success("لقد اجتزت هذا الليفل ")
   if st.button (st.session_state.button_text ):
