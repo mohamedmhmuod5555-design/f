@@ -52,4 +52,4 @@ if st.session_state.num > 0 and st.session_state.num % 10 == 0:
      del st.session_state.sign
 
 st.write("your points are " ,st.session_state.num,"from",st.session_state.count,"Questions" )
-sr.write("you are in level",st.session_state.level)
+st.write("you are in level",st.session_state.level)
