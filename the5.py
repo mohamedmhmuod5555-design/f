@@ -41,7 +41,7 @@ if st.button("السؤال التالي "):
     st.rerun()
 if st.session_state.num==10:
   st.success("لقد اجتزت هذا الليفل ")
-   if st.button("hgdt"):
+  if st.button("hgdt"):
     st.session_state.num1=random.randint(1,40)
     st.session_state.num2=random.randint(1,40)
     st.session_state.sign=random.choice(['+','-','*','/']) 
