@@ -1,6 +1,6 @@
 import random
 import streamlit as st
-if 'ran' not in st.session_state:
+if 'ran' not in st.session_state or st.session_state.ran < 1:
   st.session_state.ran=20
 if 'num' not in st.session_state:
   st.session_state.num=0
