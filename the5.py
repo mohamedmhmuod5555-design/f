@@ -47,4 +47,6 @@ if st.session_state.num==1:
      del st.session_state.num1
      del st.session_state.num2
      del st.session_state.sign
+else:
+   st.session_state.ran=20
 st.write("your points are " ,st.session_state.num,"from",st.session_state.count,"Questions")
