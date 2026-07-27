@@ -10,6 +10,7 @@ if 'count' not in st.session_state:
   st.session_state.count=0
 if 'num1' not in st.session_state:
  st.session_state.num1=random.randint(1,st.session_state.ran)
+if 'num2' not in st.session_state:
  st.session_state.num2=random.randint(1,st.session_state.ran)
  st.session_state.sign=random.choice(['+','-','*','/'])
 num1=st.session_state.num1
