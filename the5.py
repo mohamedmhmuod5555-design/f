@@ -41,7 +41,7 @@ if st.button("السؤال التالي "):
     st.rerun()
 if st.session_state.num==10:
   st.success("لقد اجتزت هذا الليفل ")
-  if st.button (st.session_state.button_text ):
+  button_label="llll"
     if st.session_state.button_text=="السؤال التالي":
         st.session_state.button_text=="ll"
         st.rerun()
