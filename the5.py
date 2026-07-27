@@ -42,8 +42,8 @@ if st.button("السؤال التالي "):
     st.rerun()
 if st.session_state.num > 0 and st.session_state.num % 10 == 0:
   st.success("لقد اجتزت هذا الليفل ")
+  st.session_state.ran+=20
   if st.button("الليفل التالي "):
-     st.session_state.ran+=20
      del st.session_state.num1
      del st.session_state.num2
      del st.session_state.sign
