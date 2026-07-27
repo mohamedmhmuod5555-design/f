@@ -39,6 +39,6 @@ if st.button("السؤال التالي "):
     st.rerun()
 if st.session_state.num==10:
   st.success("لقد اجتزت هذا الليفل ")
-    if "st.button=="السؤال التالي":
-        st.button=="ll"
+    if "st.session_state.button=="السؤال التالي":
+        st.session_state.button=="ll"
 st.write("your points are " ,st.session_state.num,"from",st.session_state.count,"Questions")
