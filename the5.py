@@ -1,7 +1,7 @@
 import random
 import streamlit as st
-if 'button_text' not in st.session_state:
-  st.session_state.button_text="السؤال التالي "
+if 'ran' not in st.session_state:
+  st.session_state.ran=20
 if 'num' not in st.session_state:
   st.session_state.num=0
 if 'sc' not in st.session_state:
@@ -9,8 +9,8 @@ if 'sc' not in st.session_state:
 if 'count' not in st.session_state:
   st.session_state.count=0
 if 'num1' not in st.session_state:
- st.session_state.num1=random.randint(1,20)
- st.session_state.num2=random.randint(1,20)
+ st.session_state.num1=random.randint(1,ran)
+ st.session_state.num2=random.randint(1,ran)
  st.session_state.sign=random.choice(['+','-','*','/'])
 num1=st.session_state.num1
 num2=st.session_state.num2
@@ -41,12 +41,9 @@ if st.button("السؤال التالي "):
     st.rerun()
 if st.session_state.num==1:
   st.success("لقد اجتزت هذا الليفل ")
+  st.session_state.ran+=20
   if st.button("الليفل التالي "):
     if 'num1' in st.session_state: del st.session_state.num1
     if 'num2' in st.session_state: del st.session_state.num2
     if 'sign' in st.session_state: del st.session_state.sign
-    st.rerun()
-    st.session_state.num1=random.randint(1,40)
-    st.session_state.num2=random.randint(1,40)
-    st.session_state.sign=random.choice(['+','-','*','/'])
 st.write("your points are " ,st.session_state.num,"from",st.session_state.count,"Questions")
